@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="winphonejson.about"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:winphonejson"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Σχετικά με την Εφαρμογή " Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="Ωρολόγιο Πρόγραμμα - Έκδοση JSON" Margin="0,6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}" FontSize="22"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+
+
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.833,19,0" 
+              Height="586" VerticalAlignment="Top">
+            <ScrollViewer Margin="0,0,0,113">
+
+                <TextBlock  HorizontalAlignment="Left" 
+               TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="16" Height="826" Width="354">
+        
+         Η εφαρμογή προβολής του ωρολογίου προγράμματος δημιουργήθηκε τους πρώτους μήνες του 2016 
+με σκοπό τη διευκόλυνση των γονέων, κηδεμόνων και εκπαιδευτικών στο να έχουν πρόσβαση
+στο ωρολόγιο πρόγραμμα του σχολείου από το κινητό τους τηλέφωνο ( Windows Phone 8.1 και νεώτερο).
+<LineBreak /><LineBreak />
+Υπάρχουν δύο εκδόσεις της εφαρμογής για το κινητό καθώς και μια υποστηρικτική εφαρμογή 
+Desktop, για τις οποίες μπορείτε να διαβάσετε στο: <LineBreak />
+
+http://users.sch.gr/chertour/pekapchertouras2016.pdf<LineBreak />
+<LineBreak />
+ 
+Στη συγκεκριμένη έκδοση, τα δεδομένα του προγράμματος πληκτρολογούνται από τον διαχειριστή σε μορφή
+JSON επάνω στο πρότυπο του αρχείου που υπάρχει μαζί με το σύνολο των αρχειών της εφαρμογής στο https://github.com/chertouras/<LineBreak /><LineBreak />
+
+Στη συνέχεια μπορεί η εφαρμογή να ανέβει στο Windows App Store, 
+ακολουθώντας την απαραίτητη διαδικασία. Εναλλακτικά, μπορεί 
+                    να εγκατασταθεί στο τηλέφωνο και απο το Visual Studio. 
+                    Απαραίτητη προϋπόθεση  
+είναι η σχετική γνώση τουλάχιστον του Visual Studio 2013 , Update 5 χωρίς 
+το οποίο δεν είναι δυνατή η τροποποίηση και το uploading της εφαρμογής.
+<LineBreak />
+<LineBreak />
+Για περισσότερες πληροφορίες σχετικά με την εφαρμογή, επικοινωνήστε στο chertour@sch.gr
+<LineBreak />
+<LineBreak />
+
+Κωνσταντίνος Χερτούρας, Διπλωματούχος Σχολής ΗΜΜΥ, Πολυτεχνείο Κρήτης, 1998<LineBreak />
+
+MSc ECE , Imperial College , London, 1999 <LineBreak />
+
+MSc Πληροφορική, τμ. ΗΜΜΥ , Πολυτεχνική Σχολή , ΑΠΘ, 2005 <LineBreak />
+
+Καθηγητής Πληροφορικής ΕΠΑΛ Ροδόπολης Σερρών<LineBreak />
+
+                </TextBlock>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</Page>
